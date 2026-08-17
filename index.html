@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>PaviRaj ❤️ 5 Months</title>
+
+
+<style>
+
+/* =====================================================
+   BASIC
+===================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  min-height: 100vh;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #7036a8 0%,
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #070014,
+      #19052f,
+      #05000f
+    );
+
+  overflow-x: hidden;
+
+}
+
+
+/* =====================================================
+   LOGIN PAGE
+===================================================== */
+
+#loginPage {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+}
+
+
+.login-box {
+
+  width: min(92%, 400px);
+
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background:
+    rgba(255,255,255,.09);
+
+  border:
+    1px solid
+    rgba(255,255,255,.2);
+
+  border-radius: 28px;
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 20px 70px
+    rgba(0,0,0,.5);
+
+  animation:
+    loginIn 1s ease;
+
+}
+
+
+.login-heart {
+
+  font-size: 65px;
+
+  animation:
+    heartbeat 1.3s infinite;
+
+  margin-bottom: 15px;
+
+}
+
+
+.login-box h1 {
+
+  font-size: 32px;
+
+  margin-bottom: 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff,
+      #a878ff,
+      #4fc9ff,
+      #ffffff
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.login-subtitle {
+
+  color: #cbb9e9;
+
+  font-size: 14px;
+
+  margin-bottom: 25px;
+
+}
+
+
+.input-box {
+
+  margin-bottom: 15px;
+
+}
+
+
+.input-box input {
+
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.2);
+
+  border-radius: 14px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  color: white;
+
+  outline: none;
+
+  font-size: 15px;
+
+}
+
+
+.input-box input::placeholder {
+
+  color: #aaa0b9;
+
+}
+
+
+.input-box input:focus {
+
+  border-color: #8c5cff;
+
+}
+
+
+.login-btn {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #673ab7,
+      #168dcc
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+}
+
+
+.login-btn:hover {
+
+  transform: scale(1.03);
+
+}
+
+
+.error {
+
+  display: none;
+
+  margin-top: 15px;
+
+  color: #ff9dbd;
+
+  font-size: 14px;
+
+}
+
+
+/* =====================================================
+   WRONG PASSWORD DESCRIPTION
+===================================================== */
+
+.description-box {
+
+  display: none;
+
+  margin-top: 20px;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  background:
+    rgba(255,255,255,.07);
+
+  border:
+    1px solid
+    rgba(255,255,255,.12);
+
+  text-align: left;
+
+}
+
+
+.description-box h3 {
+
+  color: #b991ff;
+
+  margin-bottom: 8px;
+
+  font-size: 16px;
+
+}
+
+
+.description-box p {
+
+  color: #e8def5;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   LOVE PAGE
+===================================================== */
+
+#lovePage {
+
+  display: none;
+
+  min-height: 100vh;
+
+  padding: 30px 15px;
+
+}
+
+
+.card {
+
+  width: min(94%, 450px);
+
+  margin: auto;
+
+  padding: 35px 22px;
+
+  text-align: center;
+
+  border:
+    1px solid
+    rgba(255,255,255,.2);
+
+  border-radius: 30px;
+
+  background:
+    rgba(255,255,255,.09);
+
+  backdrop-filter:
+    blur(15px);
+
+  box-shadow:
+    0 20px 60px
+    rgba(0,0,0,.5);
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+
+.main-heart {
+
+  font-size: 60px;
+
+  animation:
+    heartbeat 1.3s infinite;
+
+  margin-bottom: 10px;
+
+}
+
+
+.card h2 {
+
+  font-size:
+    clamp(34px, 10vw, 52px);
+
+  background:
+    linear-gradient(
+      90deg,
+      #fff,
+      #b88cff,
+      #65d9ff,
+      #fff
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.months {
+
+  font-size: 23px;
+
+  font-weight: bold;
+
+  color: #bfa2ff;
+
+  margin:
+    8px 0 20px;
+
+}
+
+
+.message {
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #f5edff;
+
+}
+
+
+.highlight {
+
+  margin-top: 20px;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  color: #d6b8ff;
+
+}
+
+
+.signature {
+
+  margin-top: 20px;
+
+  color: #8fdfff;
+
+}
+
+
+/* =====================================================
+   MUSIC SECTION
+===================================================== */
+
+.music-section {
+
+  margin-top: 30px;
+
+  padding: 22px 16px;
+
+  border-radius: 24px;
+
+  background:
+    rgba(255,255,255,.07);
+
+  border:
+    1px solid
+    rgba(255,255,255,.13);
+
+  box-shadow:
+    0 10px 35px
+    rgba(0,0,0,.25);
+
+}
+
+
+.music-title {
+
+  font-size: 19px;
+
+  font-weight: bold;
+
+  color: #c7a5ff;
+
+  margin-bottom: 20px;
+
+}
+
+
+/* ALBUM ART */
+
+.album-art {
+
+  width: 150px;
+
+  height: 150px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 25px;
+
+  font-size: 65px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6034b8,
+      #168dcc
+    );
+
+  box-shadow:
+    0 10px 35px
+    rgba(80,40,180,.45);
+
+  animation:
+    albumGlow 2.5s infinite;
+
+}
+
+
+/* SONG NUMBER */
+
+.song-number {
+
+  margin-top: 18px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #9d8cad;
+
+}
+
+
+/* SONG TITLE */
+
+.current-song-title {
+
+  margin-top: 7px;
+
+  font-size: 21px;
+
+  font-weight: bold;
+
+  color: white;
+
+}
+
+
+/* SONG DESCRIPTION */
+
+.song-description {
+
+  min-height: 95px;
+
+  margin-top: 15px;
+
+  padding: 15px;
+
+  border-radius: 15px;
+
+  background:
+    rgba(255,255,255,.06);
+
+  border:
+    1px solid
+    rgba(255,255,255,.09);
+
+  color: #ddd2e9;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  text-align: left;
+
+}
+
+
+/* PLAYER CONTROLS */
+
+.player-controls {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 20px;
+
+}
+
+
+.control-btn {
+
+  width: 45px;
+
+  height: 45px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255,255,255,.12);
+
+  color: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: .2s;
+
+}
+
+
+.control-btn:hover {
+
+  transform: scale(1.1);
+
+  background:
+    rgba(255,255,255,.2);
+
+}
+
+
+.play-main {
+
+  width: 60px;
+
+  height: 60px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #7038c7,
+      #168dcc
+    );
+
+  color: white;
+
+  font-size: 23px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 20px
+    rgba(80,80,255,.35);
+
+  transition: .2s;
+
+}
+
+
+.play-main:hover {
+
+  transform: scale(1.1);
+
+}
+
+
+/* PROGRESS */
+
+.progress-container {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  color: #a99bb5;
+
+  font-size: 10px;
+
+}
+
+
+#progressBar {
+
+  flex: 1;
+
+  height: 4px;
+
+  accent-color: #8d5cff;
+
+  cursor: pointer;
+
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.floating-heart {
+
+  position: fixed;
+
+  bottom: -40px;
+
+  pointer-events: none;
+
+  z-index: 1;
+
+  animation:
+    floatUp linear infinite;
+
+  opacity: 0;
+
+}
+
+
+.blue {
+
+  filter:
+    drop-shadow(
+      0 0 9px
+      #2196ff
+    );
+
+}
+
+
+.purple {
+
+  filter:
+    drop-shadow(
+      0 0 9px
+      #a855f7
+    );
+
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+.confetti {
+
+  position: fixed;
+
+  top: -30px;
+
+  z-index: 20;
+
+  pointer-events: none;
+
+  animation:
+    confettiFall
+    linear
+    forwards;
+
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes heartbeat {
+
+  0%,100% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.2);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.12);
+  }
+
+}
+
+
+@keyframes loginIn {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      scale(.7)
+      translateY(40px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      scale(1)
+      translateY(0);
+
+  }
+
+}
+
+
+@keyframes albumGlow {
+
+  0%,100% {
+
+    transform: scale(1);
+
+  }
+
+  50% {
+
+    transform: scale(1.04);
+
+  }
+
+}
+
+
+@keyframes floatUp {
+
+  0% {
+
+    transform:
+      translateY(0)
+      scale(.7)
+      rotate(0deg);
+
+    opacity: 0;
+
+  }
+
+  15% {
+
+    opacity: .9;
+
+  }
+
+  50% {
+
+    transform:
+      translateY(-55vh)
+      scale(1)
+      rotate(15deg);
+
+  }
+
+  100% {
+
+    transform:
+      translateY(-115vh)
+      scale(.6)
+      rotate(-20deg);
+
+    opacity: 0;
+
+  }
+
+}
+
+
+@keyframes confettiFall {
+
+  to {
+
+    transform:
+      translate3d(
+        var(--x),
+        110vh,
+        0
+      )
+      rotate(720deg);
+
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .login-box {
+
+    padding:
+      30px 20px;
+
+  }
+
+  .card {
+
+    padding:
+      28px 17px;
+
+  }
+
+  .message {
+
+    font-size: 14px;
+
+  }
+
+  .album-art {
+
+    width: 125px;
+
+    height: 125px;
+
+    font-size: 52px;
+
+  }
+
+  .current-song-title {
+
+    font-size: 19px;
+
+  }
+
+  .song-description {
+
+    min-height: 100px;
+
+    font-size: 13px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     LOGIN PAGE
+===================================================== -->
+
+<section id="loginPage">
+
+  <div class="login-box">
+
+    <div class="login-heart">
+      💜
+    </div>
+
+
+    <h1>
+      PaviRaj
+    </h1>
+
+
+    <div class="login-subtitle">
+
+      This little world is only for us ❤️
+
+    </div>
+
+
+    <div class="input-box">
+
+      <input
+        type="text"
+        id="loginId"
+        placeholder="Enter Login ID"
+        autocomplete="off">
+
+    </div>
+
+
+    <div class="input-box">
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter Password">
+
+    </div>
+
+
+    <button
+      class="login-btn"
+      onclick="login()">
+
+      🔐 Enter Our Love Story
+
+    </button>
+
+
+    <div
+      class="error"
+      id="error">
+
+      ❌ Wrong Login ID or Password
+
+    </div>
+
+
+    <!-- WRONG PASSWORD PERSONAL DESCRIPTION -->
+
+    <div
+      class="description-box"
+      id="descriptionBox">
+
+      <h3>
+        💙 A Little Message For You
+      </h3>
+
+      <p>
+
+        If you don't remember the password,
+        that's okay.
+
+        Maybe this little message will remind
+        you how special you are to me.
+
+        Every moment, every smile, and every
+        memory we've created together means
+        more to me than words can explain. 💜
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LOVE PAGE
+===================================================== -->
+
+<section id="lovePage">
+
+  <div class="card">
+
+
+    <div class="main-heart">
+      💙
+    </div>
+
+
+    <h2>
+      PaviRaj
+    </h2>
+
+
+    <div class="months">
+      5 Months of Love ✨
+    </div>
+
+
+    <div class="message">
+
+      Five beautiful months have passed,
+      but every moment with you still feels
+      like the beginning of something magical. 💙
+
+      <br><br>
+
+      Thank you for every smile,
+      every memory,
+      every little moment,
+      and every bit of love
+      you've given me.
+
+    </div>
+
+
+    <div class="highlight">
+
+      Happy 5 Months Anniversary,
+      My Love! 💙💜
+
+    </div>
+
+
+    <div class="signature">
+
+      Forever us — PaviRaj 💙💜
+
+    </div>
+
+
+
+    <!-- =================================================
+         MUSIC PLAYER
+    ================================================== -->
+
+    <div class="music-section">
+
+
+      <div class="music-title">
+
+        🎵 OUR 5 LOVE SONGS 🎵
+
+      </div>
+
+
+      <div
+        class="album-art"
+        id="albumArt">
+
+        💙
+
+      </div>
+
+
+      <div
+        class="song-number"
+        id="songNumber">
+
+        SONG 01 / 05
+
+      </div>
+
+
+      <div
+        class="current-song-title"
+        id="songTitle">
+
+        Our Song 01
+
+      </div>
+
+
+      <div
+        class="song-description"
+        id="songDescription">
+
+        Write your special memory
+        or description for this song here. 💙
+
+      </div>
+
+
+      <!-- CONTROLS -->
+
+      <div class="player-controls">
+
+
+        <button
+          class="control-btn"
+          onclick="previousSong()">
+
+          ⏮
+
+        </button>
+
+
+        <button
+          class="play-main"
+          onclick="togglePlay()">
+
+          ▶
+
+        </button>
+
+
+        <button
+          class="control-btn"
+          onclick="nextSong()">
+
+          ⏭
+
+        </button>
+
+
+      </div>
+
+
+      <!-- PROGRESS -->
+
+      <div class="progress-container">
+
+
+        <span id="currentTime">
+          0:00
+        </span>
+
+
+        <input
+          type="range"
+          id="progressBar"
+          value="0"
+          min="0"
+          max="100">
+
+
+        <span id="duration">
+          0:00
+        </span>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<script>
+
+
+/* =====================================================
+   🔐 LOGIN DETAILS
+   CHANGE THESE TWO
+===================================================== */
+
+const correctLoginID =
+  "PaviRaj";
+
+const correctPassword =
+  "5Months";
+
+
+
+/* =====================================================
+   LOGIN
+===================================================== */
+
+function login() {
+
+
+  const enteredID =
+    document.getElementById(
+      "loginId"
+    ).value;
+
+
+  const enteredPassword =
+    document.getElementById(
+      "password"
+    ).value;
+
+
+  const error =
+    document.getElementById(
+      "error"
+    );
+
+
+  const description =
+    document.getElementById(
+      "descriptionBox"
+    );
+
+
+  if (
+
+    enteredID === correctLoginID &&
+
+    enteredPassword === correctPassword
+
+  ) {
+
+
+    document.getElementById(
+      "loginPage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+      "lovePage"
+    ).style.display = "block";
+
+
+    startCelebration();
+
+
+  } else {
+
+
+    error.style.display =
+      "block";
+
+
+    description.style.display =
+      "block";
+
+
+  }
+
+}
+
+
+
+/* =====================================================
+   ENTER KEY
+===================================================== */
+
+document.addEventListener(
+  "keydown",
+  function(event) {
+
+    if (
+      event.key === "Enter"
+    ) {
+
+      login();
+
+    }
+
+  }
+);
+
+
+
+/* =====================================================
+   🎵 YOUR 5 SONGS
+   CHANGE THESE DETAILS
+===================================================== */
+
+const songs = [
+
+
+  {
+
+    title:
+      "Our Song 01",
+
+    file:
+      "music1.mp3",
+
+    description:
+      "This song reminds me of the first beautiful moments we shared together. Every time I hear it, I think about you. 💙",
+
+    cover:
+      "💙"
+
+  },
+
+
+  {
+
+    title:
+      "Our Song 02",
+
+    file:
+      "music2.mp3",
+
+    description:
+      "This one is special because it reminds me of all the little memories we've created together. 💜",
+
+    cover:
+      "💜"
+
+  },
+
+
+  {
+
+    title:
+      "Our Song 03",
+
+    file:
+      "music3.mp3",
+
+    description:
+      "A song for the moments when I miss you and wish you were right beside me. 💙",
+
+    cover:
+      "💙"
+
+  },
+
+
+  {
+
+    title:
+      "Our Song 04",
+
+    file:
+      "music4.mp3",
+
+    description:
+      "Five months, countless memories, and so many more beautiful moments waiting for us. 💜",
+
+    cover:
+      "💜"
+
+  },
+
+
+  {
+
+    title:
+      "Our Song 05",
+
+    file:
+      "music5.mp3",
+
+    description:
+      "Our fifth song — and hopefully just one of many songs that will become part of our story. ❤️",
+
+    cover:
+      "❤️"
+
+  }
+
+];
+
+
+
+/* =====================================================
+   MUSIC VARIABLES
+===================================================== */
+
+let currentIndex = 0;
+
+let audio =
+  new Audio(
+    songs[0].file
+  );
+
+let isPlaying = false;
+
+
+
+/* =====================================================
+   LOAD SONG
+===================================================== */
+
+function loadSong(
+  index,
+  autoplay = false
+) {
+
+
+  currentIndex = index;
+
+
+  audio.pause();
+
+
+  audio =
+    new Audio(
+      songs[
+        currentIndex
+      ].file
+    );
+
+
+  document.getElementById(
+    "songNumber"
+  ).textContent =
+
+    `SONG ${
+      String(
+        currentIndex + 1
+      ).padStart(2,"0")
+    } / 05`;
+
+
+  document.getElementById(
+    "songTitle"
+  ).textContent =
+
+    songs[
+      currentIndex
+    ].title;
+
+
+  document.getElementById(
+    "songDescription"
+  ).textContent =
+
+    songs[
+      currentIndex
+    ].description;
+
+
+  document.getElementById(
+    "albumArt"
+  ).textContent =
+
+    songs[
+      currentIndex
+    ].cover;
+
+
+  document.getElementById(
+    "progressBar"
+  ).value = 0;
+
+
+  document.getElementById(
+    "currentTime"
+  ).textContent =
+    "0:00";
+
+
+  document.getElementById(
+    "duration"
+  ).textContent =
+    "0:00";
+
+
+  isPlaying = false;
+
+
+  document.querySelector(
+    ".play-main"
+  ).textContent =
+    "▶";
+
+
+  audio.addEventListener(
+    "loadedmetadata",
+    function() {
+
+
+      document.getElementById(
+        "duration"
+      ).textContent =
+
+        formatTime(
+          audio.duration
+        );
+
+
+    }
+  );
+
+
+  audio.addEventListener(
+    "timeupdate",
+    updateProgress
+  );
+
+
+  audio.addEventListener(
+    "ended",
+    function() {
+
+
+      if (
+        currentIndex <
+        songs.length - 1
+      ) {
+
+
+        nextSong();
+
+
+      } else {
+
+
+        isPlaying =
+          false;
+
+
+        document.querySelector(
+          ".play-main"
+        ).textContent =
+          "▶";
+
+
+      }
+
+    }
+  );
+
+
+  if (autoplay) {
+
+
+    audio.play();
+
+
+    isPlaying =
+      true;
+
+
+    document.querySelector(
+      ".play-main"
+    ).textContent =
+      "❚❚";
+
+
+  }
+
+}
+
+
+
+/* =====================================================
+   PLAY / PAUSE
+===================================================== */
+
+function togglePlay() {
+
+
+  if (isPlaying) {
+
+
+    audio.pause();
+
+
+    isPlaying =
+      false;
+
+
+    document.querySelector(
+      ".play-main"
+    ).textContent =
+      "▶";
+
+
+  } else {
+
+
+    audio.play();
+
+
+    isPlaying =
+      true;
+
+
+    document.querySelector(
+      ".play-main"
+    ).textContent =
+      "❚❚";
+
+
+  }
+
+}
+
+
+
+/* =====================================================
+   NEXT SONG
+===================================================== */
+
+function nextSong() {
+
+
+  currentIndex++;
+
+
+  if (
+    currentIndex >=
+    songs.length
+  ) {
+
+    currentIndex = 0;
+
+  }
+
+
+  loadSong(
+    currentIndex,
+    true
+  );
+
+}
+
+
+
+/* =====================================================
+   PREVIOUS SONG
+===================================================== */
+
+function previousSong() {
+
+
+  currentIndex--;
+
+
+  if (
+    currentIndex < 0
+  ) {
+
+    currentIndex =
+      songs.length - 1;
+
+  }
+
+
+  loadSong(
+    currentIndex,
+    true
+  );
+
+}
+
+
+
+/* =====================================================
+   PROGRESS BAR
+===================================================== */
+
+function updateProgress() {
+
+
+  if (
+    !audio.duration
+  ) {
+
+    return;
+
+  }
+
+
+  const progress =
+
+    (
+      audio.currentTime /
+      audio.duration
+    ) * 100;
+
+
+  document.getElementById(
+    "progressBar"
+  ).value =
+    progress;
+
+
+  document.getElementById(
+    "currentTime"
+  ).textContent =
+
+    formatTime(
+      audio.currentTime
+    );
+
+}
+
+
+
+/* =====================================================
+   SEEK
+===================================================== */
+
+document.getElementById(
+  "progressBar"
+).addEventListener(
+  "input",
+  function() {
+
+
+    if (
+      !audio.duration
+    ) {
+
+      return;
+
+    }
+
+
+    audio.currentTime =
+
+      (
+        this.value / 100
+      ) *
+      audio.duration;
+
+
+  }
+);
+
+
+
+/* =====================================================
+   TIME FORMAT
+===================================================== */
+
+function formatTime(
+  seconds
+) {
+
+
+  if (
+    isNaN(seconds)
+  ) {
+
+    return "0:00";
+
+  }
+
+
+  const minutes =
+    Math.floor(
+      seconds / 60
+    );
+
+
+  const remainingSeconds =
+    Math.floor(
+      seconds % 60
+    );
+
+
+  return (
+
+    minutes +
+
+    ":" +
+
+    String(
+      remainingSeconds
+    ).padStart(2,"0")
+
+  );
+
+}
+
+
+
+/* =====================================================
+   INITIAL SONG
+===================================================== */
+
+loadSong(0);
+
+
+
+/* =====================================================
+   💙💜 FLOATING HEARTS
+===================================================== */
+
+const heartTypes = [
+
+  {
+    symbol: "💙",
+    className: "blue"
+  },
+
+  {
+    symbol: "💜",
+    className: "purple"
+  }
+
+];
+
+
+function createHeart() {
+
+
+  const heart =
+    document.createElement(
+      "div"
+    );
+
+
+  heart.className =
+    "floating-heart";
+
+
+  const type =
+
+    heartTypes[
+      Math.floor(
+        Math.random() *
+        heartTypes.length
+      )
+    ];
+
+
+  heart.innerHTML =
+    type.symbol;
+
+
+  heart.classList.add(
+    type.className
+  );
+
+
+  heart.style.left =
+
+    Math.random() *
+    100 +
+    "vw";
+
+
+  heart.style.fontSize =
+
+    (
+      15 +
+      Math.random() * 25
+    ) +
+    "px";
+
+
+  heart.style.animationDuration =
+
+    (
+      5 +
+      Math.random() * 7
+    ) +
+    "s";
+
+
+  document.body.appendChild(
+    heart
+  );
+
+
+  setTimeout(
+    () => heart.remove(),
+    14000
+  );
+
+}
+
+
+setInterval(
+  createHeart,
+  350
+);
+
+
+
+/* =====================================================
+   🎉 CONFETTI
+===================================================== */
+
+function createConfetti() {
+
+
+  const confetti =
+    document.createElement(
+      "div"
+    );
+
+
+  confetti.className =
+    "confetti";
+
+
+  const symbols = [
+
+    "💙",
+    "💜",
+    "✨",
+    "💕",
+    "★"
+
+  ];
+
+
+  confetti.innerHTML =
+
+    symbols[
+      Math.floor(
+        Math.random() *
+        symbols.length
+      )
+    ];
+
+
+  confetti.style.left =
+
+    Math.random() *
+    100 +
+    "vw";
+
+
+  confetti.style.fontSize =
+
+    (
+      12 +
+      Math.random() * 17
+    ) +
+    "px";
+
+
+  confetti.style.setProperty(
+
+    "--x",
+
+    (
+      Math.random() *
+      300 -
+      150
+    ) +
+    "px"
+
+  );
+
+
+  confetti.style.animationDuration =
+
+    (
+      3 +
+      Math.random() * 4
+    ) +
+    "s";
+
+
+  document.body.appendChild(
+    confetti
+  );
+
+
+  setTimeout(
+    () => confetti.remove(),
+    7000
+  );
+
+}
+
+
+
+/* =====================================================
+   CELEBRATION AFTER LOGIN
+===================================================== */
+
+function startCelebration() {
+
+
+  for (
+    let i = 0;
+    i < 100;
+    i++
+  ) {
+
+
+    setTimeout(
+      createConfetti,
+      i * 30
+    );
+
+
+  }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
